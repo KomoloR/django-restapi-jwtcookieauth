@@ -40,4 +40,5 @@ class User(AbstractBaseUser,PermissionsMixin):
     objects=UserManager()
 
     # using email field as unique identifier 
-    USERNAME_FIELD='email'
+    USERNAME_FIELD="email"
+    REQUIRED_FIELDS=[]
